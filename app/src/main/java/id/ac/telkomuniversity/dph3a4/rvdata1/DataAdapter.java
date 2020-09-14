@@ -34,13 +34,16 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.MyViewHolder>{
     // set data
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-
+        holder.tvId.setText(data.get(position).getId());
+        holder.tvNama.setText(data.get(position).getNamaPengadaan());
+        holder.tvAwal.setText(data.get(position).getTglAwal());
+        holder.tvAkhir.setText(data.get(position).getTglAkhir());
     }
 
     // jumlah data
     @Override
     public int getItemCount() {
-        return 0;
+        return data.size();
     }
 
     // mengenalkan komponen dalam item

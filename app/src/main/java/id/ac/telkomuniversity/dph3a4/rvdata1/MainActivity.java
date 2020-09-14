@@ -1,6 +1,8 @@
 package id.ac.telkomuniversity.dph3a4.rvdata1;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
@@ -11,6 +13,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     List<DataModel> data = new ArrayList<>();
+    RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // 3 Adapter
+        recyclerView.setAdapter(new DataAdapter(MainActivity.this, data));
+
         // 4 Layout Manager
+        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
     }
 }
