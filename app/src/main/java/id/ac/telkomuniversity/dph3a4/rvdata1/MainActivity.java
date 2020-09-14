@@ -25,14 +25,30 @@ public class MainActivity extends AppCompatActivity {
         // 2 Model
         // dummy data
         DataModel dataModel = new DataModel();
-        dataModel.setId("1");
-        dataModel.setNamaPengadaan("Pengadaan 1");
-        dataModel.setTglAwal("1 Agustus");
-        dataModel.setTglAkhir("2 Agustus");
+        dataModel.setId("18959112");
+        dataModel.setNamaPengadaan("Belanja Services Wistakon");
+        dataModel.setTglAwal("Oct 1, 2018");
+        dataModel.setTglAkhir("Dec 1, 2018");
 
-        for (int i = 0; i < 5; i++) {
-            data.add(dataModel);
-        }
+        data.add(dataModel);
+
+        dataModel.setId("18576729");
+        dataModel.setNamaPengadaan("Pengadaan peralatan persandian");
+        dataModel.setTglAwal("Nov 1, 2018");
+        dataModel.setTglAkhir("Nov 1, 2018");
+
+        data.add(dataModel);
+
+        dataModel.setId("18527780");
+        dataModel.setNamaPengadaan("Pengadaan Security Control Center");
+        dataModel.setTglAwal("Nov 1, 2018");
+        dataModel.setTglAkhir("Dec 1, 2018");
+
+        data.add(dataModel);
+
+//        for (int i = 0; i < 5; i++) {
+//            data.add(dataModel);
+//        }
 
         // 3 Adapter
         recyclerView.setAdapter(new DataAdapter(MainActivity.this, data));
