@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID" />
+
+    <TextView
+        android:id="@+id/tvNamaPengadaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Pengadaan" />
+
+    <TextView
+        android:id="@+id/tglAwalPekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tgl Awal" />
+
+    <TextView
+        android:id="@+id/tglAkhirPekerjaan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tgl Akhir" />
+</LinearLayout>
