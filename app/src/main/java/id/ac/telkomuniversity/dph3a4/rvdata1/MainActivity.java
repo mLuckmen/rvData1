@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         // 2 Model
         // dummy data
         DataModel dataModel = new DataModel();
+
         dataModel.setId("18959112");
         dataModel.setNamaPengadaan("Belanja Services Wistakon");
         dataModel.setTglAwal("Oct 1, 2018");
@@ -32,19 +33,21 @@ public class MainActivity extends AppCompatActivity {
 
         data.add(dataModel);
 
-        dataModel.setId("18576729");
-        dataModel.setNamaPengadaan("Pengadaan peralatan persandian");
-        dataModel.setTglAwal("Nov 1, 2018");
-        dataModel.setTglAkhir("Nov 1, 2018");
+        DataModel dataModel2 = new DataModel();
 
-        data.add(dataModel);
+        dataModel2.setId("18576729");
+        dataModel2.setNamaPengadaan("Pengadaan peralatan persandian");
+        dataModel2.setTglAwal("Nov 1, 2018");
+        dataModel2.setTglAkhir("Nov 1, 2018");
 
-        dataModel.setId("18527780");
-        dataModel.setNamaPengadaan("Pengadaan Security Control Center");
-        dataModel.setTglAwal("Nov 1, 2018");
-        dataModel.setTglAkhir("Dec 1, 2018");
+        data.add(dataModel2);
 
-        data.add(dataModel);
+        DataModel dataModel3 = new DataModel();
+        dataModel3.setId("18527780");
+        dataModel3.setNamaPengadaan("Pengadaan Security Control Center");
+        dataModel3.setTglAwal("Nov 1, 2018");
+        dataModel3.setTglAkhir("Dec 1, 2018");
+        data.add(dataModel3);
 
 //        for (int i = 0; i < 5; i++) {
 //            data.add(dataModel);
